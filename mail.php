@@ -29,8 +29,8 @@ $mail->addAddress($ADRESS);
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$email . ' оставил заявку, его сообщение ' .$message;
+$mail->Subject = 'Заявка с сайта "Широке Доктор"';
+$mail->Body    = '' .$email . ' оставил заявку, его сообщение <br>' .$message;
 $mail->AltBody = '';
 
 
