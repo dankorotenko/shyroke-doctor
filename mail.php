@@ -1,5 +1,7 @@
 <?php 
 
+include('config.php');
+
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
@@ -12,13 +14,13 @@ $message = $_POST['message'];
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  								// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'dandankorotenko@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'magma_dankorotenko'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = $USERNAME; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = $PASS; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('dandankorotenko@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('lifyumemle@nedoz.com');     // Кому будет уходить письмо 
+$mail->setFrom($USERNAME); // от кого будет уходить письмо?
+$mail->addAddress($ADRESS);     
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -31,9 +33,11 @@ $mail->Subject = 'Заявка с тестового сайта';
 $mail->Body    = '' .$email . ' оставил заявку, его сообщение ' .$message;
 $mail->AltBody = '';
 
-if(!$mail->send()) {
-    echo 'Error';
+
+if(!$mail->send() || !$email || !$message) {
+    header('location: pages/error.html');
+    exit;
 } else {
-    echo 'Mail had sent succesfully!';
+    header('location: index.html');
 }
 ?>
