@@ -1,0 +1,148 @@
+
+.description .grid{
+    flex-wrap: wrap;
+}
+.description .grid li {
+	padding: 50px;
+	flex-basis: 50%;
+	text-align: center;
+}
+.description h2{
+	font: bold 32px "Open Sans", sans-serif;
+	margin-bottom: 30px;
+	text-align: center;
+	color: rgb(86, 72, 29);
+}
+.description ol li{
+    max-width: 775px;
+	line-height: 1;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: left;
+	font-size: 24px;
+}
+.description ul.list li{
+    max-width: 775px;
+	line-height: 1.2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: left;
+	font-size: 24px;
+}
+.description ul.list, .description ul.list li  {
+    list-style: '-';
+}
+
+.description .grid li i {
+	color: #000;
+}
+
+.description .grid li h4 {
+	font-size: 30px;
+	margin: 25px 0;
+}
+
+/* @media (max-width: 800px) {
+	.description .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
+} */
+
+.hero-text{
+    top: 965px;
+}
+
+
+@media( max-width: 1560px){
+    .hero-text{
+        top: 863px;
+    }
+}
+
+@media( max-width: 1400px){
+    .hero-text{
+        top: 763px;
+    }
+}
+@media( max-width: 1330px){
+    .hero-text{
+        top: 763px;
+    }
+}
+@media( max-width: 1280px){
+    .hero-text{
+        top: 723px;
+    }
+}
+
+@media( max-width: 1180px){
+    .hero-text{
+        top: 648px;
+    }
+}
+@media (max-width: 1024px){
+    .hero-text{
+        top: 593px;
+    }
+    .description .grid li i{
+        font-size: 48px;
+    }
+    .description .grid li h4{
+        font-size: 24px;
+    }
+    .description h2 {
+        font-size: 24px;
+    }
+    .description ol li, .description ul.list li{
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    .hero-text{
+        top: 523px;
+    }
+}
+@media (max-width: 720px){
+    .hero-text{
+        top: 493px;
+    }
+}
+@media (max-width: 480px){
+    .hero-text{
+        top: 378px;
+    }
+    .description ol li, .description ul.list li{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .description .grid li{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    .description .grid li h4{
+        font-size: 18px;
+    }
+    .description .grid li i{
+        font-size: 36px;
+    }
+    .description h2{
+        font-size: 18px;
+    }
+    .description p{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 375px){
+    .description ol li, .description ul.list li{
+        padding-left: 0 !important;
+    }
+    .description ol, .description ul.list{
+        padding-left: 40px !important;
+    }
+}
+@media (max-width: 320px){
+    .description ol, .description ul.list{
+        padding-left: 20px !important;
+    }
+}

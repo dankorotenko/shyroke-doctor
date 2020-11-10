@@ -1,0 +1,87 @@
+h1{
+    margin-bottom: 100px !important;
+}
+.admin-list{
+    flex-wrap: wrap;
+}
+.admin-list .admin-card{
+    flex-wrap: wrap;
+    margin-bottom: 10pc;
+}
+.admin-card .admin-pic, .admin-card .admin-info{
+    flex-basis: 50%;
+}
+.admin-card .admin-pic img{
+    width: 80%;
+}
+.admin-card .admin-info h3{
+    color: rgb(57, 68,108);
+    font-size: 36px;
+    font-weight: normal;
+}
+.admin-card .admin-info ul li{
+    color: #000;
+    font-size: 28px;
+    line-height: 1.5;
+}
+.admin-card .admin-info ul li.tel{
+    margin-top: 40px;
+}
+
+@media(max-width: 1180px){
+    .admin-list .admin-card{
+        margin-bottom: 8pc;
+    }
+    .admin-card .admin-info h3{
+        font-size: 32px;
+    }
+    .admin-card .admin-info ul li{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px){
+    .admin-list .admin-card{
+        margin-bottom: 5pc;
+    }
+    .admin-card .admin-pic{
+        width: 100%;
+    }
+    .admin-card .admin-info h3{
+        font-size: 22px;
+    }
+    .admin-card .admin-info ul li{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px){
+    .admin-card .admin-pic, .admin-card .admin-info{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .admin-card .admin-pic{
+        margin-bottom: 1pc;
+    }
+    .admin-card .admin-info ul li.tel{
+        margin-top: 10px;
+    }
+    h1{
+        margin-bottom: 50px !important;
+    }
+}
+
+@media (max-width: 375px){
+    .admin-card .admin-info h3{
+        font-size: 18px;
+    }
+    .admin-card .admin-info ul li{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px){
+    .admin-list .admin-card{
+        margin-bottom: 3pc;
+    }
+}

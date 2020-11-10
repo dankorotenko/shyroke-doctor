@@ -1,0 +1,50 @@
+.hero-text{
+    top: 1013px;
+}
+@media( max-width: 1560px){
+    .hero-text{
+        top: 903px;
+    }
+}
+
+@media( max-width: 1400px){
+    .hero-text{
+        top: 813px;
+    }
+}
+@media( max-width: 1330px){
+    .hero-text{
+        top: 803px;
+    }
+}
+@media( max-width: 1280px){
+    .hero-text{
+        top: 763px;
+    }
+}
+
+@media( max-width: 1180px){
+    .hero-text{
+        top: 683px;
+    }
+}
+@media (max-width: 1024px){
+    .hero-text{
+        top: 613px;
+    }
+}
+@media (max-width: 768px){
+    .hero-text{
+        top: 543px;
+    }
+}
+@media (max-width: 720px){
+    .hero-text{
+        top: 513px;
+    }
+}
+@media (max-width: 480px){
+    .hero-text{
+        top: 395px;
+    }
+}
